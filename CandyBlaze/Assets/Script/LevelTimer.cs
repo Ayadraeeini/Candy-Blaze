@@ -1,12 +1,11 @@
 //[Aurthor:Eyad Al Raeeini]
-//THIS is responsible for the level timer in the level\\
+//THIs is responsible for the level timer in the level\\
 // [10/21/2025]
 
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
-
 public class LevelTimer : MonoBehaviour
 {
     public Slider timeBar;
@@ -14,14 +13,12 @@ public class LevelTimer : MonoBehaviour
     private float currentTime;
     private bool isRunning = true;
     public TextMeshProUGUI timeText;
-
     void Start()
     {
         currentTime = startTime;
         timeBar.maxValue = startTime;
         timeBar.value = startTime;
     }
-
     void Update()
     {
         if (isRunning)
@@ -36,27 +33,29 @@ public class LevelTimer : MonoBehaviour
             timeBar.value = currentTime;
             int minutes = (int)(currentTime / 60);
             int seconds = (int)(currentTime % 60);
-            timeText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
+           timeText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
         }
     }
-
     public void AddTime(float amount)
     {
         currentTime += amount;
         if (currentTime > startTime)
             currentTime = startTime;
     }
-
     public void StopTimer()
     {
         isRunning = false;
     }
-
+    public void ResetTimer()
+    {
+        currentTime = startTime;
+        timeBar.value = startTime;
+        isRunning = true;
+    }
     void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
-
     void OnTimeOut()
     {
         Invoke("RestartLevel", 1.5f);
