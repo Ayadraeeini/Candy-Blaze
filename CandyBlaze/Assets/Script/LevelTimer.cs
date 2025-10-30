@@ -10,7 +10,7 @@ using UnityEngine.SceneManagement;
 public class LevelTimer : MonoBehaviour
 {
     public Slider timeBar;
-    public float startTime = 180f; // 3 minutes
+    public float startTime = 180f; //3 minutes
     private float currentTime;
     private bool isRunning = true;
     public TextMeshProUGUI timeText;
@@ -27,43 +27,38 @@ public class LevelTimer : MonoBehaviour
         if (isRunning)
         {
             currentTime -= Time.deltaTime;
-
             if (currentTime <= 0)
             {
                 currentTime = 0;
-                 isRunning = false;
+                isRunning = false;
                 OnTimeOut();
             }
             timeBar.value = currentTime;
-            int minutes = Mathf.FloorToInt(currentTime / 60);
-             int seconds = Mathf.FloorToInt(currentTime % 60);
-             timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+            int minutes = (int)(currentTime / 60);
+            int seconds = (int)(currentTime % 60);
+            timeText.text = minutes.ToString("00") + ":" + seconds.ToString("00");
         }
-    }
-    public void StopTimer()
-    {
-        isRunning = false;
     }
 
     public void AddTime(float amount)
     {
         currentTime += amount;
         if (currentTime > startTime)
-          currentTime = startTime;
-        timeBar.value = currentTime;
-        Debug.Log("Added " + amount + " seconds!");
+            currentTime = startTime;
     }
-    void OnTimeOut()
+
+    public void StopTimer()
     {
-        Debug.Log("the time is up! restarting level...");
-        Invoke(nameof(RestartLevel), 1.5f);
+        isRunning = false;
     }
 
     void RestartLevel()
     {
-        currentTime = startTime;
-        isRunning = true;
-        timeBar.value = startTime;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    void OnTimeOut()
+    {
+        Invoke("RestartLevel", 1.5f);
     }
 }

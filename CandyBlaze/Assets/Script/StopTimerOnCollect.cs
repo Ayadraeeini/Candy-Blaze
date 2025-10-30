@@ -10,12 +10,12 @@ public class StopTimerOnCollect : MonoBehaviour
 {
 
     public LevelTimer levelTimer;
-     void OnTriggerEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-           levelTimer.StopTimer();
-             Destroy(gameObject);
+            levelTimer.StopTimer();
+            Destroy(gameObject);
         }
     }
 }
