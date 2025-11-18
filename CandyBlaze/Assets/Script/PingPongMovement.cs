@@ -9,15 +9,14 @@ using UnityEngine;
 public class PingPongMovement : MonoBehaviour
 {
     public float speed = 1.5f;
-    private float timeCounter = 0f;
     public Transform pointA;
     public Transform pointB;
 
     void Update()
     {
-        if (pointA == null || pointB == null) return;
-        timeCounter += Time.deltaTime * speed;
-       float t = (Mathf.Sin(timeCounter) + 1f) / 2f;
+        if (pointA == null || pointB == null)
+            return;
+        float t = Mathf.PingPong(Time.time * speed, 1f);
         transform.position = Vector3.Lerp(pointA.position, pointB.position, t);
     }
 }
