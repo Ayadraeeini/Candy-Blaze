@@ -904,6 +904,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhaseThrough (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912869679578022407, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cb9ce872e96bad4c81c6cb3e5354dcf, type: 2}
     - target: {fileID: 8264885760009592181, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
       propertyPath: m_LocalScale.y
       value: 29.342657
@@ -1448,6 +1452,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhaseThrough (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912869679578022407, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cb9ce872e96bad4c81c6cb3e5354dcf, type: 2}
     - target: {fileID: 8264885760009592181, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0065553403
@@ -3219,6 +3227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhaseThrough (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912869679578022407, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cb9ce872e96bad4c81c6cb3e5354dcf, type: 2}
     - target: {fileID: 8264885760009592181, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
       propertyPath: m_LocalScale.y
       value: 38.65895
@@ -3529,6 +3541,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhaseThrough (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912869679578022407, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cb9ce872e96bad4c81c6cb3e5354dcf, type: 2}
     - target: {fileID: 8264885760009592181, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
       propertyPath: m_LocalScale.y
       value: 29.342657
@@ -3714,6 +3730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhaseThrough (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912869679578022407, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cb9ce872e96bad4c81c6cb3e5354dcf, type: 2}
     - target: {fileID: 8264885760009592181, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.0065553403
@@ -4328,6 +4348,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhaseThrough (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 2912869679578022407, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cb9ce872e96bad4c81c6cb3e5354dcf, type: 2}
     - target: {fileID: 8264885760009592181, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
       propertyPath: m_LocalScale.y
       value: 29.342657
@@ -7382,6 +7406,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PhaseThrough
       objectReference: {fileID: 0}
+    - target: {fileID: 2912869679578022407, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4cb9ce872e96bad4c81c6cb3e5354dcf, type: 2}
     - target: {fileID: 8264885760009592181, guid: f8330df0038307b40b64e383c68ae4b8, type: 3}
       propertyPath: m_LocalScale.y
       value: 29.342657
